@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức Bóng đá</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg/640px-Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg'), url('https://upload.wikimedia.org/wikipedia/commons/6/68/Leo_Messi_%28cropped%29.jpg');
+            background-position: left top, right top;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 300px 100vh, 300px 100vh;
+            background-attachment: fixed, fixed;
+            position: relative;
+        }
+        .logo-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://vff.org.vn/uploads/images/brazuca-1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        .news-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        .news-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .news-item h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .news-item p {
+            color: #555;
+        }
+        .news-item a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+        .load-more {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .load-more button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .load-more button:hover {
+            background-color: #0056b3;
+        }
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .football-icon {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        .title {
+            font-size: 36px;
+            color: #333;
+            argin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">Bóng Đá</h1>
+        <img src="https://www.bing.com/th?id=OIP.M2KVZXkC6L7N6xdPl34OiwHaHa&w=174&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Trái bóng" class="football-icon">
+    </div>     
+    <div class="news-item">
+        <img src="https://cdnphoto.dantri.com.vn/T6qSJM9tPU5FHMzHc6xWShe9i-k=/thumb_w/1020/2025/01/21/2-6724be5d389fb-1737429759165.jpg" alt="Antony đe doạ Chelsea ở cúp châu Âu, MU công "cùn" vẫn có cửa hạ Tottenham">
+        <h2>Antony đe doạ Chelsea ở cúp châu Âu, MU công "cùn" vẫn có cửa hạ Tottenham</h2>
+        <p>Phong độ xuất sắc của Antony giúp Real Betis trở thành đối trọng đáng gờm với Chelsea ở Conference League.</p>
+        <a href="https://youtu.be/yvvLrQ1Lb8Q" target="_blank">Xem video trên YouTube</a>
+    </div>
+    <div class="news-item">
+        <img src="https://media.vov.vn/sites/default/files/styles/large/public/2022-08/sancho.jpg" alt="Sancho "lạc lối" tại Chelsea, MU mừng thầm vì quyết định sáng suốt">
+        <h2>Sancho "lạc lối" tại Chelsea, MU mừng thầm vì quyết định sáng suốt</h2>
+        <p>Kể từ khi gia nhập Chelsea dưới dạng cho mượn, Jadon Sancho vẫn chưa thể thoát khỏi cái bóng mờ nhạt của mình tại MU...</p>
+    </div>
+    <div class="news-item">
+        <img src="https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/112023/14_2_20231116221007.jpg" alt="Dự đoán tỉ số vòng 25 Ngoại hạng Anh: Khó lường Tottenham - MU, Man City âu lo đấu Newcastle">
+        <h2>Dự đoán tỉ số vòng 25 Ngoại hạng Anh: Khó lường Tottenham - MU, Man City âu lo đấu Newcastle</h2>
+        <p>Trận cầu tâm điểm vòng 25 Ngoại hạng Anh được giới mộ điệu đánh giá là cuộc chiến của "những người cùng khổ" diễn ra giữa Tottenham và Man United. Trong khi đó, nửa xanh thành Manchester sẽ phải tiếp đón một đối thủ đang xếp ngay sau họ trên bảng xếp hạng - Newcastle.</p>
+    </div>
+    <div class="load-more">
+        <button onclick="alert('Chưa có tin tức mới')">Xem thêm</button>
+    </div>
+</body>
+</html>
