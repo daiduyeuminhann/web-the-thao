@@ -11,7 +11,7 @@ danh mục(khoa){
 		mục sản phẩm
 		liệt kê sản phẩm
 	web quán ăn
-		thực đơn
+		menu(image slide)
 }
 chi tiết(hiếu){
 	web thể thao
@@ -24,7 +24,7 @@ chi tiết(hiếu){
 		hình ảnh
 		mô tả sản phẩm
 	web quán ăn
-		nguyên liệu món ăn
+		CTKM
 		hình ảnh
 }
 tương tác khách hàng(đại){
