@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ & Đánh giá</title>
+    <link rel="stylesheet" href="chung.css">
+</head>
+<body>
+    <header>
+        <h1>Thể Thao & Thể Thao Điện Tử</h1>
+        <nav>
+            <a href="trangchu.html">Trang chủ</a>
+            <a href="lienhe.html">Liên hệ & Đánh giá</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tin Tức</button>
+                <div class="dropdown-content">
+                <a href="bongda.html">Bóng Đá</a>
+                <a href="lmht.html">LMHT</a>
+                <a href="valorant.html">Valorant</a>
+                <a href="#">Cầu Lông</a>
+                <a href="#">Bóng Rổ</a>
+                </div>
+            </div>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="#">Đăng nhập</a>
+            <a href="javascript:void(0);" id="searchButton">Tìm kiếm</a>
+            <input type="text" id="searchBox" placeholder="Nhập từ khóa..." style="display: none; margin-left: 10px; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+        </nav>
+    </header>   
+    <div class="container">
+        <h2>Liên hệ</h2>
+        <form>
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Nội dung:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Đánh giá</h2>
+        <form>
+            <label for="rating">Chọn số sao:</label>
+            <select id="rating" name="rating">
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+            
+            <label for="review">Nhận xét:</label>
+            <textarea id="review" name="review" rows="4"></textarea>
+            
+            <button type="submit">Gửi đánh giá</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>THỂ THAO TỔNG HỢP</h3>
+                <p>Trang thông tin cung cấp nội dung bổ ích về thể thao, Esports.</p>
+                <p>&copy; 2025 - Trang thông tin thể thao</p>
+                <div class="social-icons">
+                    <a href="https://x.com/LeagueOfLegends">𝕏</a>
+                    <a href="https://www.youtube.com/@leagueoflegends">▶</a>
+                    <a href="https://www.facebook.com/leagueoflegends/">ƒ</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Thông tin</h3>
+                <ul>
+                    <li><a href="gioithieu.html">Về chúng tôi</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                    <li><a href="">Email: lmht@gmail.com</a></li>
+                    <li><a href="tel:0123456789">Hotline: 0123 456 789</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Chuyên Mục</h3>
+                <ul>
+                    <li><a href="bongda.html">Bóng Đá</a></li>
+                    <li><a href="lmht.html">Liên Minh Huyền Thoại</a></li>
+                    <li><a href="valorant.html">Valorant</a></li>
+                    <li><a href="#">Cầu Lông</a></li>
+                    <li><a href="#">Bóng Rổ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
