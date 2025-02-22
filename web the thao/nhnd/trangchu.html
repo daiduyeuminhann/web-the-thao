@@ -33,9 +33,9 @@
             <h2>Tin tức nổi bật</h2>
                 <div class="news-container">
                     <div class="news-highlight" id="newsBox">
-                    <img id="newsImage" src="https://th.bing.com/th/id/R.ce44fa16498d04a4e02abf1dcf2b9714?rik=XKrhkG0HLlP2mg&pid=ImgRaw&r=0" alt="News Image">
+                    <img id="newsImage" src="https://kenh14cdn.com/203336854389633024/2022/11/1/photo-3-1667305768861229754180.png" alt="News Image">
                     <div class="news-overlay"></div>
-                    <div class="news-text" id="news">Loading...</div>
+                    <div class="news-text" id="news">Lịch thi đấu LCK Mùa Hè 2025 mới nhất hôm nay</div>
                 </div>
             </div>
             <div class="news-container no-overflow">
@@ -131,57 +131,5 @@
             </div>
         </div>
     </footer>
-    
-    <script>
-        document.getElementById("searchButton").addEventListener("click", function() {
-            const searchBox = document.getElementById("searchBox");
-            if (searchBox.style.display === "none" || searchBox.style.display === "") {
-                searchBox.style.display = "block";
-            } else {
-                searchBox.style.display = "none";
-            }
-        });
-    
-        const newsList = [
-            { text: "Kết quả bóng rổ NBA hôm nay 26/10: Những bản hợp đồng mới tỏa sáng rực rỡ", image: "https://img5.thuthuatphanmem.vn/uploads/2021/07/16/hinh-anh-bong-ro-cuc-dep_012210101.jpg", url: "https://webthethao.vn/bong-ro.htm" },
-            { text: "Lịch thi đấu bóng đá Champions League hôm nay: Bayern lội ngược dòng 'kinh điển' trước Man City?", image: "https://khoinguonsangtao.vn/wp-content/uploads/2022/10/hinh-anh-bong-da.jpg", url: "https://www.24h.com.vn/bong-da-c48.html" },
-            { text: "Valorant sẽ đón chào thành viên mới mang tên Fade vào giữa năm 2025", image: "https://cellphones.com.vn/sforum/wp-content/uploads/2022/04/fade-2.jpg", url: "https://valorant.zing.vn/vi-vn" },
-            { text: "Lịch thi đấu LCK Mùa Hè 2025 mới nhất hôm nay", image: "https://kenh14cdn.com/203336854389633024/2022/11/1/photo-3-1667305768861229754180.png", url: "https://thethao247.vn/lmht-c181" },
-            { text: "Chung kết LCK Mùa Hè 2025: T1 ngậm ngùi nhìn HLE có chức vô địch thứ 3 liên tiếp tại LCK", image: "https://tinhayvip.com/wp-content/uploads/2023/10/loat-anh-lmht-fanart-darkness-4k-ngau-dep-11.jpg", url: "https://www.leagueoflegends.com/vi-vn/news" }
-        ];
-        
-        let index = 0;
-        
-        function updateNews() {
-            const newsBox = document.getElementById("newsBox");
-            newsBox.style.transform = "translateX(-100%)";
-            
-            setTimeout(() => {
-                document.getElementById("news").textContent = newsList[index].text;
-                const newsImage = document.getElementById("newsImage");
-                newsImage.src = newsList[index].image;
-                newsImage.style.objectFit = "cover";
-                
-                // Gán sự kiện click cho ảnh
-                newsImage.onclick = function() {
-                    window.open(newsList[index].url, "_blank");
-                };
-    
-                newsBox.style.transition = "none";
-                newsBox.style.transform = "translateX(100%)";
-                
-                setTimeout(() => {
-                    newsBox.style.transition = "transform 0.5s ease-in-out";
-                    newsBox.style.transform = "translateX(0)";
-                }, 50);
-                
-                index = (index + 1) % newsList.length;
-            }, 500);
-        }
-        
-        setInterval(updateNews, 3000);
-        updateNews();
-    </script>
-    
 </body>
 </html> 
